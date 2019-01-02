@@ -2,6 +2,9 @@
 Welcome to the official Aion mining pool repository. 
 This respositoy is created for pool operators; it contains the Aion mining pool and corresponding UI compatible with Aion 2.7+.
 
+# branch: master used by aionmine.org stratum slave server with no code modifications.
+# branch: master-varient is used by aionmine.org master server.  The code modification reports a stable hashrate on the api.
+
 ## Key Features
 - Supports clusters of pools each running individual currencies
 - Ultra-low-latency Stratum implementation using asynchronous I/O (LibUv)

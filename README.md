@@ -6,6 +6,7 @@ This respositoy is created for pool operators; it contains the Aion mining pool 
 ### branch: master-poolhashpower is used by aionmine.org master server with no code modifications.  Calculates pool hash as a function of poolhashpower (!NOT effective rate).
 
 ## Key Features
+- Pool hash as a function of collective miners hashpower (poolhashpower)
 - Supports clusters of pools each running individual currencies
 - Ultra-low-latency Stratum implementation using asynchronous I/O (LibUv)
 - Adaptive share difficulty ("vardiff")

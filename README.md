@@ -5,6 +5,8 @@ This respositoy is created for pool operators; it contains the Aion mining pool 
 ### branch: master is used by aionmine.org stratum slave server with no code modifications (Calculates pool hash as effective hashrate).
 ### branch: master-poolhashpower is used by aionmine.org master server with no code modifications.  Calculates pool hash as a function of poolhashpower (!NOT effective rate).
 
+### branch: master-phpstats added full network stats to share receiver job on poolhashpower branch
+
 ## Key Features
 - Pool hash as a function of collective miners hashpower (poolhashpower)
 - Supports clusters of pools each running individual currencies

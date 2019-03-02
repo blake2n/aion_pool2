@@ -20,3 +20,4 @@ This respositoy is created for pool operators; it contains the Aion mining pool 
 - POW (proof-of-work) & POS (proof-of-stake) support
 - Detailed per-pool logging to console & filesystem
 - Responsive User Interface 
+- Scrape fix

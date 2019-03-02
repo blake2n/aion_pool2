@@ -406,10 +406,9 @@ namespace MiningCore.Api
             var page = context.GetQueryParameter<int>("page", 0);
             var pageSize = context.GetQueryParameter<int>("pageSize", 20);
 
-            if (pageSize == 0)
+            if (pageSize != null)
             {
-                context.Response.StatusCode = 500;
-                return;
+                pageSize = 1000;
             }
 
             var result = cf.Run(con => statsRepo.PagePoolMinersByHashrate(
@@ -432,10 +431,9 @@ namespace MiningCore.Api
             var pageSize = context.GetQueryParameter<int>("pageSize", 20);
             var blockStatusString = context.GetQueryParameter<string>("status", null);
 
-            if (pageSize == 0)
+            if (pageSize != null)
             {
-                context.Response.StatusCode = 500;
-                return;
+                pageSize = 1000;
             }
 
             BlockStatus[] blockStatus;
@@ -494,10 +492,9 @@ namespace MiningCore.Api
             var page = context.GetQueryParameter<int>("page", 0);
             var pageSize = context.GetQueryParameter<int>("pageSize", 20);
 
-            if (pageSize == 0)
+            if (pageSize != null)
             {
-                context.Response.StatusCode = 500;
-                return;
+                pageSize = 1000;
             }
 
             var result = cf.Run(con => paymentsRepo.PagePayments(
@@ -586,10 +583,9 @@ namespace MiningCore.Api
             var page = context.GetQueryParameter<int>("page", 0);
             var pageSize = context.GetQueryParameter<int>("pageSize", 20);
 
-            if (pageSize == 0)
+            if (pageSize != null)
             {
-                context.Response.StatusCode = 500;
-                return;
+                pageSize = 500;
             }
 
 
@@ -636,9 +632,9 @@ namespace MiningCore.Api
             var page = context.GetQueryParameter<int>("page", 0);
             var pageSize = context.GetQueryParameter<int>("pageSize", 20);
 
-            if (pageSize == 0)
+            if (pageSize != null)
             {
-                context.Response.StatusCode = 500;
+                pageSize = 200;
                 return;
             }
 

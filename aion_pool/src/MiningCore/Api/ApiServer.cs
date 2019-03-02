@@ -635,7 +635,6 @@ namespace MiningCore.Api
             if (pageSize != null)
             {
                 pageSize = 200;
-                return;
             }
 
             var balanceChanges = cf.Run(con => paymentsRepo.PageBalanceChanges(

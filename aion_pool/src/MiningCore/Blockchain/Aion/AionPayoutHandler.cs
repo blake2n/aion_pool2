@@ -170,7 +170,7 @@ namespace MiningCore.Blockchain.Aion
 
         public Task CalculateBlockEffortAsync(Block block, double accumulatedBlockShareDiff)
         {
-            block.Effort = accumulatedBlockShareDiff / block.NetworkDifficulty;
+            block.Effort = (accumulatedBlockShareDiff / block.NetworkDifficulty) * 0.5f;
 
             return Task.FromResult(true);
         }
